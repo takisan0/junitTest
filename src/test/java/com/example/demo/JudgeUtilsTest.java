@@ -9,12 +9,12 @@ import java.util.Date;
 import org.junit.jupiter.api.Test;
 
 class JudgeUtilsTest {
-	
+
 	private JudgeUtils target = new JudgeUtils();
 	SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
 
 	// ********************************
-	// isBillingAge()
+	// isBillingAge()Test
 	// ********************************
 
 	// ケースNo1
@@ -49,7 +49,7 @@ class JudgeUtilsTest {
 		assertTrue(actual);
 		mockTime.tearDown();
 	}
-	
+
 	// ケースNo2
 	// ケース内容：18歳(04/02)で課金可能
 	// 誕生時刻(引数)：2000/04/01
@@ -152,7 +152,7 @@ class JudgeUtilsTest {
 		assertTrue(actual);
 		mockTime.tearDown();
 	}
-	
+
 	// ケースNo2
 	// ケース内容：18歳(04/02)でプレイ可能
 	// 誕生時刻(引数)：2000/04/01
